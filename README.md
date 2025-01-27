@@ -1,6 +1,10 @@
 # Line-Bot Remind
 
-### You have to ensure these
+## You have to ensure these
+
+```sh
+pip install
+```
 
 ```sh
 line-bot-sdk
