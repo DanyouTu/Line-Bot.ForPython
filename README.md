@@ -3,8 +3,9 @@
 ## Install command
 
 ```sh
-python -m pip install -r 
+python -m pip install -r  requirements.txt
 ```
+
 ## You have to ensure these
 
 ```sh
