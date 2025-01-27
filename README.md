@@ -3,7 +3,7 @@
 ## Install command
 
 ```sh
-pip install
+python -m pip install -r 
 ```
 ## You have to ensure these
 
