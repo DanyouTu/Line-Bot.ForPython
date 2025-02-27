@@ -2,13 +2,13 @@
 
 ## Install command
 
-```py
-python -m pip install -r requirements.txt
+```sg
+pip install -r requirements.txt
 ```
 
 ## You have to ensure these
 
-```sh
+```txt
 line-bot-sdk
 Flask
 openai==0.28.0
