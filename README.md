@@ -1,18 +1,37 @@
-# Line-Bot Remind
+# Kairos
 
-## Install command
+Kairos is an AI bot for LINE, powered by ChatGPT API 
+and deployed on [Render web service](https://render.com).
 
-```sh
+
+## Features
+
+- 🤖 Integrates ChatGPT for natural conversational responses.
+- 🚀 Easily deployable on Render web services.
+- 📝 Uses Redis as the memory container, separating group and private chats.
+
+## Render Settings
+
+### Build Command
+
+```bash
 pip install -r requirements.txt
 ```
 
-## You have to ensure these
+### Start Command
 
-```txt
-line-bot-sdk
-Flask
-openai==0.28.0
-gunicorn
-redis>=5.0.0
-Flask-Session
+```bash
+gunicorn -w 4 -b 0.0.0.0:10000 main:app
 ```
+
+### Environment
+
+- TZ: Timezone (e.g., Asia/Taipei)
+- REDIS_URL: URL for your Redis instance (if using Redis for memory/caching)
+- BASE_URL: The root URL of your deployed web service
+- WEBHOOK_HANDLER: The endpoint path for LINE webhook
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
