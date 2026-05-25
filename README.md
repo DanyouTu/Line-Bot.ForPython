@@ -23,7 +23,3 @@ pip install -r requirements.txt
 ```bash
 gunicorn -w 4 -b 0.0.0.0:10000 main:app
 ```
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
