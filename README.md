@@ -33,7 +33,9 @@ pip install -r requirements.txt
 gunicorn -w 4 -b 0.0.0.0:10000 bot:app
 
 ```
-*(Note: Ensure the start command matches your main Python file. If your file is bot.py, use bot:app instead of main:app)*
+> [!NOTE]
+> Ensure the start command matches your main Python file. If your file is bot.py, use bot:app instead of main:app
+
 ## Environment Variables
 For security reasons, do not hardcode your API keys. Make sure to set the following environment variables in your Render web service:
  * PORT: Web service port (default is 5000)
@@ -51,8 +53,3 @@ This project relies on several key packages:
  * gunicorn
  * redis>=5.0.0
  * Flask-Session
-## License
-This project is licensed under the MIT License.
-```
-
-```
